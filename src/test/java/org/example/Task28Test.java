@@ -13,7 +13,7 @@ class Task28Test {
     void addStudent() {
         ArrayList<Student> students = new ArrayList<>();
 
-        String surname = "Fundament";
+        String surname = "Fundament1";
         String name = "Daniil";
         String lastname = "Dmitrovych";
         String group = "TR-15";
