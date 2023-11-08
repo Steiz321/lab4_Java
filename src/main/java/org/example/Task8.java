@@ -35,7 +35,7 @@ public class Task8 {
         int newPriority = scanner.nextInt();
 
         try {
-            QueuePerson changedPriority = changePriority(queue, surname, newPriority);
+            changePriority(queue, surname, newPriority);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -68,7 +68,7 @@ public class Task8 {
         return queuePerson;
     }
 
-    public static QueuePerson changePriority(LinkedList<QueuePerson> queue, String surname, int newPriority) throws Exception {
+    public static void changePriority(LinkedList<QueuePerson> queue, String surname, int newPriority) throws Exception {
         QueuePerson queuePerson = getPersonBySurname(queue, surname);
         if (queuePerson == null) {
             System.out.println("Invalid surname");
@@ -86,8 +86,6 @@ public class Task8 {
         queuePerson.priority = newPriority;
 
         queue.sort((a, b) -> a.priority - b.priority);
-
-        return queuePerson;
     }
 }
 

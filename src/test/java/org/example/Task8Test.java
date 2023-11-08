@@ -81,10 +81,4 @@ class Task8Test {
         assertEquals(correct, result);
     }
 
-    @Test
-    void changePriority() {
-
-
-
-    }
 }
